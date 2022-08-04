@@ -1,0 +1,1 @@
+select t1.customer_id, t1.name, concat("+", t2.country_code, t1.phone_number) as country_code from customers as t1 left join country_codes as t2 on t1.country = t2.country;
